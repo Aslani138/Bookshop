@@ -87,7 +87,8 @@ function getData(data) {
     basketFooter.innerHTML = `
     <p class = "basket-footer-total">Total:${total}$</p>
     <p class = "basket-footer-qty">QTY:${length}</p>
-    <button class="basket-footer-button">Confrim Order</button>
+    <a href="./Pages/form.html"><button class="basket-footer-button">Confrim Order</button></a>
+    
   `;
   }
 
