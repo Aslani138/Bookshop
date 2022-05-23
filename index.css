@@ -1,7 +1,7 @@
 main {
     width: 1280px;
     margin: auto;
-    
+    position: relative;
 }
 
 main h1 {
@@ -14,6 +14,19 @@ main h1 {
 .navigation {
     background-image: url(./Assets/book-shop-main.jpeg);
     height: 300px;
+    display: flex;
+    position: relative;
+}
+
+.navigation img {
+    width: 70px;
+    position: absolute;
+    right: 110px;
+    top: 110px;
+}
+
+.navigation img:hover {
+    cursor: pointer;
 }
 
 .book-item-img {
@@ -28,6 +41,7 @@ main h1 {
     grid-gap: 10px;
     list-style: none;
     background-color: bisque;
+    padding: 20px;
 }
 
 .book-list ul li {
@@ -46,6 +60,12 @@ main h1 {
 
 .book-item-author{
     width: fit-content;
+    max-width: 350px;
+}
+
+.book-item-author span {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .book-item-basket img {
@@ -57,6 +77,11 @@ main h1 {
 .book-item-basket {
     display: flex;
     background-color: #de2454;;
+}
+
+.book-item-basket:hover{
+    cursor: pointer;
+    background-color: #830808;
 }
 
 .book-item-basket p {
@@ -82,4 +107,93 @@ main h1 {
     width: 300px;
     padding: 10px;
     display: none;
+}
+
+.book-item-price {
+    font-size: 30px;
+    color: green;
+    margin-left: 135px;
+    padding: 10px;
+}
+
+.basket {
+    position: absolute;
+    background-color: rgb(126, 106, 82);
+    width: 420px;
+    top: 6.9%;
+    right: 5%;
+    list-style: none;
+    display: none;
+    max-height: 410px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.basket li {
+    margin-top: 15px;
+}
+
+.book-item-img-basket {
+    width: 100px;
+}
+
+.basket-item {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.book-item-title-basket{
+    width: 216px;
+    margin-bottom: 20px;
+}
+
+.basket-footer {
+    display: flex;
+    width: 420px;
+    height: 60px;
+    background-color: rgb(83, 136, 182);
+    justify-content: space-around;
+}
+
+.basket-footer-total {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.basket-footer-qty {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.basket-footer-button {
+    margin-top: 10px;
+    background-color: #de2454;
+    height: 40px;
+}
+
+.book-item-author-basket {
+    width: 216px;
+    margin-bottom: 20px;
+}
+
+.book-item-price-basket {
+    font-size: 18px;
+    color: rgb(26, 73, 26);
+}
+
+.basket-footer-button:hover {
+    cursor: pointer;
+    background-color: #830808;
+}
+
+.book-item-basket-x {
+    top: 1px;
+    position: absolute;
+    width: 15px;
+    right: 0px;
+}
+
+.book-item-basket-x:hover {
+    cursor: pointer;
 }
